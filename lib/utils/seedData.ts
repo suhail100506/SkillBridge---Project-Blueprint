@@ -1,0 +1,789 @@
+export const seedCareers = [
+  {
+    slug: "data-analyst",
+    title: "Data Analyst",
+    description: "Transforms data into insights that drive business decisions. Uses statistical techniques, data visualization tools, and database queries to analyze trends, create reports, and identify patterns.",
+    industry: "Tech & Business",
+    typicalDayDescription: "Morning starts with standup and reviewing automated dashboard reports. Spend the afternoon writing SQL queries to retrieve transaction data, cleaning the data in Python/Excel, and building interactive charts in Tableau for the product team.",
+    salaryIndia: { entry: 450000, mid: 800000, senior: 1400000, lead: 2000000 },
+    salaryGlobal: { entry: 60000, mid: 90000, senior: 130000, lead: 170000 },
+    demandTrend: [
+      { year: 2022, indexValue: 100 },
+      { year: 2023, indexValue: 115 },
+      { year: 2024, indexValue: 130 },
+      { year: 2025, indexValue: 148 },
+      { year: 2026, indexValue: 170 },
+      { year: 2027, indexValue: 195 }
+    ],
+    demandGrowthRate: 23,
+    remotePercentage: 75,
+    requiredSkills: [
+      { name: "SQL", priority: "must", learningHours: 25 },
+      { name: "Python", priority: "must", learningHours: 40 },
+      { name: "Tableau", priority: "must", learningHours: 20 },
+      { name: "Excel Data Cleaning", priority: "must", learningHours: 15 },
+      { name: "Statistics", priority: "nice", learningHours: 30 },
+      { name: "A/B Testing", priority: "nice", learningHours: 20 }
+    ],
+    topCertifications: [
+      "Google Data Analytics Professional Certificate",
+      "Microsoft Certified: Power BI Data Analyst",
+      "Tableau Desktop Certified Associate"
+    ],
+    topHiringCompanies: ["Google", "Amazon", "Accenture", "TCS", "Deloitte"],
+    relatedCareers: ["data-scientist", "business-analyst", "analytics-engineer"],
+    tags: ["Data", "SQL", "Tableau", "Analytics"]
+  },
+  {
+    slug: "ux-designer",
+    title: "UX Designer",
+    description: "Focuses on optimizing the user journey, layout, and overall experience of digital products. Conducts user research, designs wireframes, and runs usability testing to build intuitive user interfaces.",
+    industry: "Design & Product",
+    typicalDayDescription: "Start the day reviewing feedback on Figma mockups from developers. Conduct a 1-hour interview with a product user, wireframe interactive flows for the new onboarding experience, and collaborate with the UI builder on spacing.",
+    salaryIndia: { entry: 500000, mid: 950000, senior: 1600000, lead: 2400000 },
+    salaryGlobal: { entry: 65000, mid: 95000, senior: 140000, lead: 190000 },
+    demandTrend: [
+      { year: 2022, indexValue: 100 },
+      { year: 2023, indexValue: 110 },
+      { year: 2024, indexValue: 125 },
+      { year: 2025, indexValue: 138 },
+      { year: 2026, indexValue: 152 },
+      { year: 2027, indexValue: 170 }
+    ],
+    demandGrowthRate: 18,
+    remotePercentage: 80,
+    requiredSkills: [
+      { name: "Figma", priority: "must", learningHours: 30 },
+      { name: "User Research", priority: "must", learningHours: 25 },
+      { name: "Wireframing & Prototyping", priority: "must", learningHours: 20 },
+      { name: "Information Architecture", priority: "nice", learningHours: 15 },
+      { name: "Usability Testing", priority: "nice", learningHours: 15 }
+    ],
+    topCertifications: [
+      "Google UX Design Professional Certificate",
+      "Interaction Design Foundation (IxDF) Membership",
+      "NN/g UX Certification"
+    ],
+    topHiringCompanies: ["Microsoft", "Flipkart", "Infosys", "Adobe", "Cognizant"],
+    relatedCareers: ["ui-designer", "product-manager", "front-end-developer"],
+    tags: ["Design", "Figma", "UX", "Product"]
+  },
+  {
+    slug: "cybersecurity-analyst",
+    title: "Cybersecurity Analyst",
+    description: "Protects computer networks and systems from cyber threats, unauthorized access, and security breaches. Monitors traffic, investigates incidents, and configures firewalls.",
+    industry: "Tech & Security",
+    typicalDayDescription: "Check network traffic logs for anomaly flags. Spend the afternoon analyzing an unauthorized access alert, updating firewall rules, and holding an educational workshop for team members on phishing.",
+    salaryIndia: { entry: 550000, mid: 1000000, senior: 1800000, lead: 2800000 },
+    salaryGlobal: { entry: 75000, mid: 110000, senior: 160000, lead: 210000 },
+    demandTrend: [
+      { year: 2022, indexValue: 100 },
+      { year: 2023, indexValue: 120 },
+      { year: 2024, indexValue: 145 },
+      { year: 2025, indexValue: 175 },
+      { year: 2026, indexValue: 210 },
+      { year: 2027, indexValue: 250 }
+    ],
+    demandGrowthRate: 32,
+    remotePercentage: 65,
+    requiredSkills: [
+      { name: "Network Security", priority: "must", learningHours: 35 },
+      { name: "Linux Administration", priority: "must", learningHours: 25 },
+      { name: "Incident Response", priority: "must", learningHours: 30 },
+      { name: "Wireshark", priority: "nice", learningHours: 15 },
+      { name: "Ethical Hacking basics", priority: "nice", learningHours: 40 }
+    ],
+    topCertifications: [
+      "CompTIA Security+",
+      "Certified Information Systems Security Professional (CISSP)",
+      "CEH (Certified Ethical Hacker)"
+    ],
+    topHiringCompanies: ["IBM", "Cisco", "Deloitte", "Wipro", "PwC"],
+    relatedCareers: ["cloud-engineer", "network-engineer", "security-consultant"],
+    tags: ["Security", "Linux", "Networking", "Compliance"]
+  },
+  {
+    slug: "product-manager",
+    title: "Product Manager",
+    description: "Defines the strategy, roadmap, and feature set for a product. Collaborates with engineering, design, and marketing to guide a product from concept to launch.",
+    industry: "Product & Business",
+    typicalDayDescription: "Align on feature requirements with developers, sync with UX design on prototype comments, write product spec docs, and analyze customer feedback data to prioritize the backlog.",
+    salaryIndia: { entry: 800000, mid: 1500000, senior: 2600000, lead: 3800000 },
+    salaryGlobal: { entry: 85000, mid: 120000, senior: 170000, lead: 230000 },
+    demandTrend: [
+      { year: 2022, indexValue: 100 },
+      { year: 2023, indexValue: 112 },
+      { year: 2024, indexValue: 122 },
+      { year: 2025, indexValue: 135 },
+      { year: 2026, indexValue: 150 },
+      { year: 2027, indexValue: 168 }
+    ],
+    demandGrowthRate: 15,
+    remotePercentage: 70,
+    requiredSkills: [
+      { name: "Agile & Scrum", priority: "must", learningHours: 20 },
+      { name: "Product Strategy", priority: "must", learningHours: 30 },
+      { name: "Figma & Wireframing", priority: "nice", learningHours: 15 },
+      { name: "SQL basics", priority: "nice", learningHours: 15 },
+      { name: "User Research", priority: "must", learningHours: 20 }
+    ],
+    topCertifications: [
+      "Certified Product Manager (CPM)",
+      "Pragmatic Institute Product Certification",
+      "Scrum Alliance Product Owner (CSPO)"
+    ],
+    topHiringCompanies: ["Google", "Meta", "Uber", "PhonePe", "Flipkart"],
+    relatedCareers: ["ux-designer", "business-analyst", "scrum-master"],
+    tags: ["Product", "Strategy", "Management", "Agile"]
+  },
+  {
+    slug: "full-stack-developer",
+    title: "Full Stack Developer",
+    description: "Builds both the front-end user interface and the back-end server logic, databases, and APIs. Fully owns the implementation of complex web applications.",
+    industry: "Tech & Software",
+    typicalDayDescription: "Spend mornings reviewing pull requests and writing React components. Spend afternoons designing database schemas and deploying APIs using Node.js and AWS.",
+    salaryIndia: { entry: 600000, mid: 1100000, senior: 1900000, lead: 2800000 },
+    salaryGlobal: { entry: 70000, mid: 105000, senior: 150000, lead: 195000 },
+    demandTrend: [
+      { year: 2022, indexValue: 100 },
+      { year: 2023, indexValue: 118 },
+      { year: 2024, indexValue: 136 },
+      { year: 2025, indexValue: 158 },
+      { year: 2026, indexValue: 182 },
+      { year: 2027, indexValue: 210 }
+    ],
+    demandGrowthRate: 25,
+    remotePercentage: 90,
+    requiredSkills: [
+      { name: "HTML & CSS", priority: "must", learningHours: 15 },
+      { name: "JavaScript / TypeScript", priority: "must", learningHours: 45 },
+      { name: "React / Next.js", priority: "must", learningHours: 50 },
+      { name: "Node.js & Express", priority: "must", learningHours: 35 },
+      { name: "MongoDB & SQL", priority: "must", learningHours: 25 }
+    ],
+    topCertifications: [
+      "Meta Front-End Developer Certificate",
+      "AWS Certified Developer - Associate",
+      "MongoDB Certified Developer"
+    ],
+    topHiringCompanies: ["Microsoft", "Uber", "Paytm", "Swiggy", "Cognizant"],
+    relatedCareers: ["front-end-developer", "back-end-developer", "cloud-engineer"],
+    tags: ["Development", "React", "Next.js", "Node"]
+  }
+];
+
+export const seedResources = [
+  // Data Analyst
+  {
+    title: "SQL for Data Analysis - Full Course",
+    platform: "YouTube",
+    channel: "freeCodeCamp",
+    url: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+    duration: "4 hrs 15 min",
+    free: true,
+    tags: ["SQL", "Data Analyst", "Beginner"],
+    rating: 4.8,
+    languages: ["English"],
+    careerPath: "data-analyst"
+  },
+  {
+    title: "Python for Beginners - Full Crash Course",
+    platform: "YouTube",
+    channel: "Mosh Hamedani",
+    url: "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    duration: "6 hrs 14 min",
+    free: true,
+    tags: ["Python", "Programming", "Beginner"],
+    rating: 4.9,
+    languages: ["English"],
+    careerPath: "data-analyst"
+  },
+  {
+    title: "Tableau Tutorial for Beginners",
+    platform: "YouTube",
+    channel: "Alex The Analyst",
+    url: "https://www.youtube.com/watch?v=aHaOIvR0094",
+    duration: "2 hrs 30 min",
+    free: true,
+    tags: ["Tableau", "Data Analyst", "Intermediate"],
+    rating: 4.7,
+    languages: ["English"],
+    careerPath: "data-analyst"
+  },
+  {
+    title: "Introduction to Statistics",
+    platform: "NPTEL",
+    channel: "IIT Madras",
+    url: "https://onlinecourses.nptel.ac.in/noc23_ma37/preview",
+    duration: "12 weeks",
+    free: true,
+    tags: ["Statistics", "NPTEL", "Academic"],
+    rating: 4.6,
+    languages: ["English", "Hindi notes"],
+    careerPath: "data-analyst"
+  },
+
+  // UX Designer
+  {
+    title: "Figma UI/UX Design Essentials",
+    platform: "YouTube",
+    channel: "Daniel Walter Scott",
+    url: "https://www.youtube.com/watch?v=c9Wg6Rq_TdU",
+    duration: "3 hrs 40 min",
+    free: true,
+    tags: ["Figma", "UX Designer", "Beginner"],
+    rating: 4.8,
+    languages: ["English"],
+    careerPath: "ux-designer"
+  },
+  {
+    title: "User Research & Interaction Principles",
+    platform: "Coursera",
+    channel: "University of Michigan (Audit Mode)",
+    url: "https://www.coursera.org/learn/ux-research-at-scale",
+    duration: "14 hrs",
+    free: true,
+    tags: ["User Research", "UX Designer", "Intermediate"],
+    rating: 4.7,
+    languages: ["English"],
+    careerPath: "ux-designer"
+  },
+  {
+    title: "Design Rules: Principles of Good UX",
+    platform: "YouTube",
+    channel: "The Futur",
+    url: "https://www.youtube.com/watch?v=OnhYF0o_cQE",
+    duration: "1 hr 15 min",
+    free: true,
+    tags: ["UX Designer", "Principles", "Beginner"],
+    rating: 4.9,
+    languages: ["English"],
+    careerPath: "ux-designer"
+  },
+
+  // Cybersecurity
+  {
+    title: "CompTIA Security+ Full Course (SY0-601)",
+    platform: "YouTube",
+    channel: "Professor Messer",
+    url: "https://www.youtube.com/watch?v=9NE33AOi3EE",
+    duration: "18 hrs",
+    free: true,
+    tags: ["Security", "Network", "Beginner"],
+    rating: 4.9,
+    languages: ["English"],
+    careerPath: "cybersecurity-analyst"
+  },
+  {
+    title: "Linux Command Line Tutorial for Beginners",
+    platform: "YouTube",
+    channel: "NetworkChuck",
+    url: "https://www.youtube.com/watch?v=V1y-mbWM3B8",
+    duration: "3 hrs",
+    free: true,
+    tags: ["Linux", "Command Line", "Beginner"],
+    rating: 4.8,
+    languages: ["English"],
+    careerPath: "cybersecurity-analyst"
+  },
+  {
+    title: "Introduction to Cyber Security",
+    platform: "NPTEL",
+    channel: "IIT Kharagpur",
+    url: "https://onlinecourses.nptel.ac.in/noc23_cs126/preview",
+    duration: "8 weeks",
+    free: true,
+    tags: ["Security", "NPTEL", "Intermediate"],
+    rating: 4.5,
+    languages: ["English"],
+    careerPath: "cybersecurity-analyst"
+  },
+
+  // Full Stack Dev
+  {
+    title: "Next.js 14 App Router Course",
+    platform: "YouTube",
+    channel: "JavaScript Mastery",
+    url: "https://www.youtube.com/watch?v=wm5gMKuwSYk",
+    duration: "5 hrs 20 min",
+    free: true,
+    tags: ["Next.js", "React", "Advanced"],
+    rating: 4.9,
+    languages: ["English"],
+    careerPath: "full-stack-developer"
+  },
+  {
+    title: "Modern JavaScript (ES6) Complete Guide",
+    platform: "YouTube",
+    channel: "Traversy Media",
+    url: "https://www.youtube.com/watch?v=BI1o250go5Y",
+    duration: "3 hrs 30 min",
+    free: true,
+    tags: ["JavaScript", "Development", "Beginner"],
+    rating: 4.7,
+    languages: ["English"],
+    careerPath: "full-stack-developer"
+  }
+];
+
+export const seedInternships = [
+  {
+    company: "Acme Data Solutions",
+    logo: "📊",
+    title: "Sales Dashboard Development Project",
+    description: "Analyze dynamic sales records from Q1-Q3, design database schemas in SQL, and build a visually impressive interactive sales performance dashboard using Tableau/Power BI.",
+    skills_required: ["SQL", "Excel Data Cleaning", "Tableau"],
+    skills_gained: ["Data Storytelling", "Database Administration", "Business Intelligence"],
+    duration_weeks: 4,
+    remote: true,
+    stipend: 8000,
+    deadline: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000), // 10 days from now
+    spots_total: 4,
+    spots_remaining: 3,
+    career_path: ["data-analyst"],
+    apply_url: "https://example.com/apply-dashboard",
+    verified: true
+  },
+  {
+    company: "Zeta Fintech",
+    logo: "💳",
+    title: "Risk Analysis & Customer Fraud Profiling",
+    description: "Identify outlier trends and create clean reports assessing risk profiles of standard fintech accounts. Extract datasets using SQL and script analysis with Python.",
+    skills_required: ["SQL", "Python", "Statistics"],
+    skills_gained: ["Risk Assessment", "Fraud Detection", "Advanced SQL queries"],
+    duration_weeks: 6,
+    remote: true,
+    stipend: 12000,
+    deadline: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // 15 days from now
+    spots_total: 3,
+    spots_remaining: 2,
+    career_path: ["data-analyst"],
+    apply_url: "https://example.com/apply-zeta",
+    verified: true
+  },
+  {
+    company: "LaunchPad Tech",
+    logo: "🚀",
+    title: "SaaS Application Landing Page Re-design",
+    description: "Conduct research with current users, layout wireframes using Figma, and build test prototypes of the signup page checkout layout.",
+    skills_required: ["Figma", "User Research", "Wireframing & Prototyping"],
+    skills_gained: ["Conversion Rate Optimization", "Design Systems", "Usability Testing"],
+    duration_weeks: 4,
+    remote: true,
+    stipend: null, // Unpaid, for experience
+    deadline: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000), // 5 days from now
+    spots_total: 5,
+    spots_remaining: 5,
+    career_path: ["ux-designer"],
+    apply_url: "https://example.com/apply-launchpad",
+    verified: true
+  },
+  {
+    company: "ShieldCorp Labs",
+    logo: "🛡️",
+    title: "Vulnerability Scan & Security Auditing",
+    description: "Inspect network traffic patterns, run scans using local terminal utilities (Nmap/Wireshark), and check system patch compliance reports under mentor guidance.",
+    skills_required: ["Linux Administration", "Network Security", "Wireshark"],
+    skills_gained: ["System Auditing", "Threat Analysis", "Network Compliance"],
+    duration_weeks: 8,
+    remote: false,
+    stipend: 15000,
+    deadline: new Date(Date.now() + 20 * 24 * 60 * 60 * 1000), // 20 days from now
+    spots_total: 2,
+    spots_remaining: 1,
+    career_path: ["cybersecurity-analyst"],
+    apply_url: "https://example.com/apply-shield",
+    verified: true
+  },
+  {
+    company: "AgileFlow Studios",
+    logo: "💻",
+    title: "E-Commerce User Profile Feature Builder",
+    description: "Build clean, responsive React page templates, construct REST endpoints, and implement db schemas for tracking account purchase histories in Next.js.",
+    skills_required: ["JavaScript / TypeScript", "React / Next.js", "Node.js & Express"],
+    skills_gained: ["API Integration", "State Management", "MongoDB administration"],
+    duration_weeks: 8,
+    remote: true,
+    stipend: 18000,
+    deadline: new Date(Date.now() + 12 * 24 * 60 * 60 * 1000), // 12 days from now
+    spots_total: 3,
+    spots_remaining: 2,
+    career_path: ["full-stack-developer"],
+    apply_url: "https://example.com/apply-ecommerce",
+    verified: true
+  }
+];
+
+export const sampleAnalysis = {
+  inputType: "manual" as const,
+  rawInput: JSON.stringify({
+    currentJobTitle: "High School Teacher",
+    skills: ["Excel", "Communication", "Lesson Planning", "Public Speaking", "Grading", "Basic Python"],
+    yearsExperience: 5
+  }),
+  extractedSkills: {
+    strong: ["Public Speaking", "Communication", "Lesson Planning"],
+    developing: ["Excel Data Filtering", "Basic Python"],
+    transferable: ["Structured Explanations", "Time Management", "Project Coordination"],
+    gaps: ["Advanced SQL", "Tableau Dashboarding", "Relational Databases", "Statistical A/B Testing"]
+  },
+  overallScore: 78,
+  recommendations: [
+    {
+      careerTitle: "Data Analyst",
+      careerSlug: "data-analyst",
+      matchPercentage: 82,
+      whyItFits: "Your skill in explaining complex concepts to students transitions perfectly into presenting data insights to business leaders. Your basic programming familiarity is a great headstart for SQL/Python.",
+      skillsYouHave: ["Communication", "Basic Python", "Excel"],
+      skillsNeeded: ["SQL queries", "Tableau dashboard design", "Business Intelligence basics", "Introductory Statistics"],
+      salaryRange: { min: 450000, mid: 800000, max: 1400000, currency: "INR" },
+      demandGrowth: 23,
+      jobsDemandData: [
+        { year: 2022, count: 42000 },
+        { year: 2023, count: 48300 },
+        { year: 2024, count: 54600 },
+        { year: 2025, count: 62100 },
+        { year: 2026, count: 71400 },
+        { year: 2027, count: 81900 }
+      ]
+    },
+    {
+      careerTitle: "UX Designer",
+      careerSlug: "ux-designer",
+      matchPercentage: 74,
+      whyItFits: "Structuring lesson plans and understanding student psychology maps directly to user-journey design and building empathetic onboarding interactions.",
+      skillsYouHave: ["Communication", "Lesson Planning", "Empathy"],
+      skillsNeeded: ["Figma UI software", "User Research", "Wireframing & Prototyping"],
+      salaryRange: { min: 500000, mid: 950000, max: 1600000, currency: "INR" },
+      demandGrowth: 18,
+      jobsDemandData: [
+        { year: 2022, count: 18000 },
+        { year: 2023, count: 19800 },
+        { year: 2024, count: 22500 },
+        { year: 2025, count: 24800 },
+        { year: 2026, count: 27300 },
+        { year: 2027, count: 30600 }
+      ]
+    },
+    {
+      careerTitle: "Product Manager",
+      careerSlug: "product-manager",
+      matchPercentage: 71,
+      whyItFits: "Managing classrooms, handling schedules, and resolving stakeholder (parents/students) requests is core product management. You need agile frameworks and technical specs.",
+      skillsYouHave: ["Communication", "Project Coordination", "Public Speaking"],
+      skillsNeeded: ["Agile & Scrum", "Product Roadmap Planning", "Tech Spec Writing"],
+      salaryRange: { min: 800000, mid: 1500000, max: 2600000, currency: "INR" },
+      demandGrowth: 15,
+      jobsDemandData: [
+        { year: 2022, count: 12000 },
+        { year: 2023, count: 13400 },
+        { year: 2024, count: 14600 },
+        { year: 2025, count: 16200 },
+        { year: 2026, count: 18000 },
+        { year: 2027, count: 20160 }
+      ]
+    }
+  ],
+  aiSummary: "You are in a prime position to transition. Your strong communicative foundation can be instantly weaponized in analytics, design, or product leadership roles. Focusing on SQL and Tableau will give you the quickest market readiness.",
+  shareToken: "demo-share-token"
+};
+
+// Generates a mock 90-day roadmap for Data Analyst
+export function generateMockRoadmap(userId: string, analysisId: string) {
+  const phases = [
+    {
+      phaseNumber: 1 as const,
+      title: "Phase 1: Foundation & Basic Tools",
+      description: "Get comfortable with working on spreadsheet data, basic program logic, and database languages.",
+      startDay: 1,
+      endDay: 30,
+      weeks: [
+        {
+          weekNumber: 1,
+          theme: "Excel for Data Wrangling",
+          status: "completed" as const,
+          tasks: [
+            {
+              id: "w1-t1",
+              title: "Learn Excel pivot tables and lookup formulas",
+              type: "watch" as const,
+              estimatedMinutes: 60,
+              resource: {
+                platform: "YouTube",
+                url: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                title: "Excel Data Cleaning Basics",
+                duration: "1 hour",
+                free: true
+              },
+              completed: true,
+              completedAt: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000),
+              xpReward: 20
+            },
+            {
+              id: "w1-t2",
+              title: "Practice cleaning a raw dataset of 1,000 entries",
+              type: "practice" as const,
+              estimatedMinutes: 90,
+              resource: {
+                platform: "GitHub",
+                url: "https://github.com/datasets",
+                title: "Practice Datasets Repo",
+                duration: "1.5 hours",
+                free: true
+              },
+              completed: true,
+              completedAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000),
+              xpReward: 30
+            }
+          ],
+          milestone: "Clean and analyze your first e-commerce dataset using Excel",
+          milestoneCompleted: true
+        },
+        {
+          weekNumber: 2,
+          theme: "SQL Foundations (SELECT, WHERE, JOIN)",
+          status: "in_progress" as const,
+          tasks: [
+            {
+              id: "w2-t1",
+              title: "Learn basic SELECT, WHERE, and sorting queries",
+              type: "watch" as const,
+              estimatedMinutes: 75,
+              resource: {
+                platform: "YouTube",
+                url: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+                title: "SQL for Analysis freeCodeCamp",
+                duration: "1.2 hours",
+                free: true
+              },
+              completed: true,
+              completedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+              xpReward: 20
+            },
+            {
+              id: "w2-t2",
+              title: "Understand JOIN statements and aggregating rows",
+              type: "read" as const,
+              estimatedMinutes: 45,
+              resource: {
+                platform: "MDN / W3Schools",
+                url: "https://www.w3schools.com/sql/",
+                title: "Interactive SQL Tutorials",
+                duration: "45 mins",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 15
+            },
+            {
+              id: "w2-t3",
+              title: "Solve 10 SQL exercises on hackerRank",
+              type: "practice" as const,
+              estimatedMinutes: 60,
+              resource: {
+                platform: "HackerRank",
+                url: "https://www.hackerrank.com/domains/sql",
+                title: "HackerRank SQL Practice",
+                duration: "1 hour",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 30
+            }
+          ],
+          milestone: "Solve all SQL JOIN challenges",
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 3,
+          theme: "Intermediate SQL Queries",
+          status: "not_started" as const,
+          tasks: [
+            {
+              id: "w3-t1",
+              title: "Study SQL Window functions and CTEs",
+              type: "watch" as const,
+              estimatedMinutes: 90,
+              resource: {
+                platform: "YouTube",
+                url: "https://example.com",
+                title: "Advanced SQL Queries Course",
+                duration: "1.5 hours",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 20
+            },
+            {
+              id: "w3-t2",
+              title: "Complete mock database project locally",
+              type: "build" as const,
+              estimatedMinutes: 120,
+              resource: {
+                platform: "GitHub",
+                url: "https://example.com",
+                title: "Docker Database Setup Guide",
+                duration: "2 hours",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 40
+            }
+          ],
+          milestone: "Write a SQL CTE query generating sales statistics",
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 4,
+          theme: "Basic Statistics & Analysis Logic",
+          status: "not_started" as const,
+          tasks: [
+            {
+              id: "w4-t1",
+              title: "Understand Mean, Median, Mode, Variance, and Distributions",
+              type: "watch" as const,
+              estimatedMinutes: 80,
+              resource: {
+                platform: "Khan Academy",
+                url: "https://www.khanacademy.org/math/statistics-probability",
+                title: "Statistics for Analytics",
+                duration: "1.3 hours",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 20
+            }
+          ],
+          milestone: null,
+          milestoneCompleted: false
+        }
+      ]
+    },
+    {
+      phaseNumber: 2 as const,
+      title: "Phase 2: Data Visualisation & Programming",
+      description: "Learn to tell stories with charts using Tableau and program custom pipelines in Python.",
+      startDay: 31,
+      endDay: 60,
+      weeks: [
+        {
+          weekNumber: 5,
+          theme: "Tableau Fundamentals",
+          status: "not_started" as const,
+          tasks: [
+            {
+              id: "w5-t1",
+              title: "Connect Excel/CSV files to Tableau Desktop",
+              type: "practice" as const,
+              estimatedMinutes: 45,
+              resource: {
+                platform: "YouTube",
+                url: "https://www.youtube.com/watch?v=aHaOIvR0094",
+                title: "Tableau Tutorial",
+                duration: "45 mins",
+                free: true
+              },
+              completed: false,
+              completedAt: null,
+              xpReward: 20
+            }
+          ],
+          milestone: "Build a sheet with map and bar correlations",
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 6,
+          theme: "Creating Dashboards & Storytelling",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: null,
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 7,
+          theme: "Python for Data: Pandas & Numpy Basics",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: null,
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 8,
+          theme: "Data Cleaning in Pandas",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: null,
+          milestoneCompleted: false
+        }
+      ]
+    },
+    {
+      phaseNumber: 3 as const,
+      title: "Phase 3: Portfolio & Applications",
+      description: "Assemble projects into a public portfolio, apply for micro-internships, and prep for technical SQL calls.",
+      startDay: 61,
+      endDay: 90,
+      weeks: [
+        {
+          weekNumber: 9,
+          theme: "Matplotlib & Seaborn Charting",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: null,
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 10,
+          theme: "Building Your First Portfolio Case Study",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: "Post your detailed case study to GitHub Pages",
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 11,
+          theme: "Mock Interviews & SQL Challenges",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: null,
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 12,
+          theme: "Applying for Micro-Internships",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: "Send application for 2 projects",
+          milestoneCompleted: false
+        },
+        {
+          weekNumber: 13,
+          theme: "Final Polish & Interview Preparation",
+          status: "not_started" as const,
+          tasks: [],
+          milestone: "Complete 90-Day Transition Challenge",
+          milestoneCompleted: false
+        }
+      ]
+    }
+  ];
+
+  return {
+    userId,
+    analysisId,
+    targetCareer: "Data Analyst",
+    targetCareerSlug: "data-analyst",
+    totalDays: 90,
+    status: "active" as const,
+    overallProgress: 15, // completed week 1 and partial week 2
+    currentDay: 12,
+    phases,
+    totalXP: 500,
+    earnedXP: 70
+  };
+}
