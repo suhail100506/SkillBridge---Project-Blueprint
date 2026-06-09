@@ -1,6 +1,5 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import GoogleProvider from "next-auth/providers/google";
 import UserModel from "./db/models/User";
 import { connectToDatabase } from "./db/mongoose";
 import bcrypt from "bcryptjs";
@@ -59,10 +58,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           image: user.image
         };
       }
-    }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID || "mock-google-client-id",
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "mock-google-client-secret",
     })
   ],
   callbacks: {

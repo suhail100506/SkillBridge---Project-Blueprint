@@ -18,8 +18,8 @@ export default function CVUploader({ onUploadSuccess }: CVUploaderProps) {
     const uploadedFile = acceptedFiles[0];
     if (!uploadedFile) return;
 
-    if (uploadedFile.size > 5 * 1024 * 1024) {
-      setError("File exceeds 5MB limit.");
+    if (uploadedFile.size > 10 * 1024 * 1024) {
+      setError("File exceeds 10MB limit.");
       return;
     }
 
@@ -124,7 +124,7 @@ export default function CVUploader({ onUploadSuccess }: CVUploaderProps) {
               {isDragActive ? "Drop the resume here" : "Drag and drop your CV here"}
             </p>
             <p className="text-xs text-gray-500">
-              Accepts PDF or plain text TXT files up to 5MB
+              Accepts PDF or plain text TXT files up to 10MB
             </p>
           </div>
         )}
