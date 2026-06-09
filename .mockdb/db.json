@@ -4,7 +4,7 @@
       "_id": "demo-user-id",
       "name": "Demo Transitioner",
       "email": "demo@skillbridge.com",
-      "password": "$2b$10$pGxv88ByoTyjB.MfDDRcVex3UJs6jUj9b35MdZzxanOTjMWz7Cl0a",
+      "password": "$2b$10$AkaFM4I11rUEKABgi9Qy5uot7ptiXuXVo14vXpwBDFLMC.4RQVDq2",
       "provider": "credentials",
       "currentJobTitle": "High School Teacher",
       "industry": "Education",
@@ -32,20 +32,48 @@
       "targetSalaryMax": 1400000,
       "xpPoints": 70,
       "streak": 3,
-      "lastActiveDate": "2026-06-08T09:01:46.846Z",
+      "lastActiveDate": "2026-06-08T11:15:16.996Z",
       "badges": [
         "First Step",
         "Halfway Hero"
       ],
-      "createdAt": "2026-06-08T09:01:46.846Z",
-      "updatedAt": "2026-06-08T09:01:46.846Z"
+      "createdAt": "2026-06-08T11:15:16.997Z",
+      "updatedAt": "2026-06-08T11:15:16.997Z"
+    },
+    {
+      "_id": "6a26a51c00a9ee0c5c0d9310",
+      "createdAt": "2026-06-08T11:18:52.405Z",
+      "updatedAt": "2026-06-08T11:18:52.405Z",
+      "name": "suhail",
+      "email": "suhail@gmail.com",
+      "password": "$2b$10$vBQ1jfoilzSkBHnQ3rpLIeAjMs4Zq/zm28HmztzNcB86DCMuJme5C",
+      "provider": "credentials",
+      "currentJobTitle": "Student / Career Transitioner",
+      "industry": "None",
+      "yearsExperience": 0,
+      "education": "Bachelor's",
+      "skills": {
+        "technical": [],
+        "soft": [],
+        "domain": [],
+        "tools": []
+      },
+      "location": "Remote",
+      "preferredWorkType": "remote",
+      "hoursPerWeekForLearning": 5,
+      "targetSalaryMin": 500000,
+      "targetSalaryMax": 1200000,
+      "xpPoints": 0,
+      "streak": 1,
+      "lastActiveDate": "2026-06-08T11:18:52.405Z",
+      "badges": []
     }
   ],
   "analyses": [
     {
       "_id": "demo-analysis-id",
       "userId": "demo-user-id",
-      "createdAt": "2026-06-08T09:01:46.846Z",
+      "createdAt": "2026-06-08T11:15:16.997Z",
       "inputType": "manual",
       "rawInput": "{\"currentJobTitle\":\"High School Teacher\",\"skills\":[\"Excel\",\"Communication\",\"Lesson Planning\",\"Public Speaking\",\"Grading\",\"Basic Python\"],\"yearsExperience\":5}",
       "extractedSkills": {
@@ -228,8 +256,8 @@
   "roadmaps": [
     {
       "_id": "demo-roadmap-id",
-      "createdAt": "2026-06-08T09:01:46.846Z",
-      "updatedAt": "2026-06-08T09:01:46.846Z",
+      "createdAt": "2026-06-08T11:15:16.997Z",
+      "updatedAt": "2026-06-08T11:15:16.997Z",
       "userId": "demo-user-id",
       "analysisId": "demo-analysis-id",
       "targetCareer": "Data Analyst",
@@ -264,7 +292,7 @@
                     "free": true
                   },
                   "completed": true,
-                  "completedAt": "2026-05-27T09:01:46.846Z",
+                  "completedAt": "2026-05-27T11:15:16.997Z",
                   "xpReward": 20
                 },
                 {
@@ -280,7 +308,7 @@
                     "free": true
                   },
                   "completed": true,
-                  "completedAt": "2026-05-29T09:01:46.846Z",
+                  "completedAt": "2026-05-29T11:15:16.997Z",
                   "xpReward": 30
                 }
               ],
@@ -305,7 +333,7 @@
                     "free": true
                   },
                   "completed": true,
-                  "completedAt": "2026-06-05T09:01:46.846Z",
+                  "completedAt": "2026-06-05T11:15:16.997Z",
                   "xpReward": 20
                 },
                 {
@@ -1035,7 +1063,7 @@
       "duration_weeks": 4,
       "remote": true,
       "stipend": 8000,
-      "deadline": "2026-06-18T09:01:41.670Z",
+      "deadline": "2026-06-18T11:15:11.880Z",
       "spots_total": 4,
       "spots_remaining": 3,
       "career_path": [
@@ -1062,7 +1090,7 @@
       "duration_weeks": 6,
       "remote": true,
       "stipend": 12000,
-      "deadline": "2026-06-23T09:01:41.670Z",
+      "deadline": "2026-06-23T11:15:11.880Z",
       "spots_total": 3,
       "spots_remaining": 2,
       "career_path": [
@@ -1089,7 +1117,7 @@
       "duration_weeks": 4,
       "remote": true,
       "stipend": null,
-      "deadline": "2026-06-13T09:01:41.670Z",
+      "deadline": "2026-06-13T11:15:11.880Z",
       "spots_total": 5,
       "spots_remaining": 5,
       "career_path": [
@@ -1116,7 +1144,7 @@
       "duration_weeks": 8,
       "remote": false,
       "stipend": 15000,
-      "deadline": "2026-06-28T09:01:41.670Z",
+      "deadline": "2026-06-28T11:15:11.880Z",
       "spots_total": 2,
       "spots_remaining": 1,
       "career_path": [
@@ -1143,7 +1171,7 @@
       "duration_weeks": 8,
       "remote": true,
       "stipend": 18000,
-      "deadline": "2026-06-20T09:01:41.670Z",
+      "deadline": "2026-06-20T11:15:11.880Z",
       "spots_total": 3,
       "spots_remaining": 2,
       "career_path": [

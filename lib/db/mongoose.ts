@@ -214,20 +214,26 @@ export class MockModel<T> {
 
 // Wrapper function to expose the correct DB access layer
 export function getModel<T>(modelName: string, mongooseModel: mongoose.Model<any>): any {
-  // If we are in mock mode, return the MockModel
-  // In a Next.js environment, we run on both client (build) and server.
-  // We check if connection is mock or if process.env.MONGODB_URI is not set.
-  if (connection.isMock || !MONGODB_URI) {
-    // Map modelName to collection key
-    const collectionMap: { [key: string]: string } = {
-      User: 'users',
-      Analysis: 'analyses',
-      Roadmap: 'roadmaps',
-      Career: 'careers',
-      Internship: 'internships'
-    };
-    const collectionKey = collectionMap[modelName] || `${modelName.toLowerCase()}s`;
-    return new MockModel<T>(collectionKey);
-  }
-  return mongooseModel;
+  const collectionMap: { [key: string]: string } = {
+    User: 'users',
+    Analysis: 'analyses',
+    Roadmap: 'roadmaps',
+    Career: 'careers',
+    Internship: 'internships'
+  };
+  const collectionKey = collectionMap[modelName] || `${modelName.toLowerCase()}s`;
+
+  // Use a Proxy to dynamically check connection.isMock at query time, 
+  // rather than locking in the decision at module import time!
+  return new Proxy({}, {
+    get(target, prop) {
+      if (connection.isMock || !MONGODB_URI) {
+        const mockModel = new MockModel<T>(collectionKey);
+        const value = (mockModel as any)[prop];
+        return typeof value === 'function' ? value.bind(mockModel) : value;
+      }
+      const value = (mongooseModel as any)[prop];
+      return typeof value === 'function' ? value.bind(mongooseModel) : value;
+    }
+  });
 }

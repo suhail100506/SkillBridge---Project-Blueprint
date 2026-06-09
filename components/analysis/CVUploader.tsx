@@ -52,7 +52,12 @@ export default function CVUploader({ onUploadSuccess }: CVUploaderProps) {
       setProgress(100);
 
       if (!response.ok) {
-        throw new Error("Failed to parse file. Please verify it is a valid PDF/TXT.");
+        let errorMessage = "Failed to parse file. Please verify it is a valid PDF/TXT.";
+        try {
+          const errBody = await response.json();
+          if (errBody.error) errorMessage = errBody.error;
+        } catch (e) {}
+        throw new Error(errorMessage);
       }
 
       const result = await response.json();

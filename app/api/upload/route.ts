@@ -16,8 +16,16 @@ export async function POST(req: NextRequest) {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
-    // Extract text from PDF structure
-    const extractedText = await parsePDF(buffer);
+    let extractedText = "";
+
+    // Check file type to determine parsing method
+    if (file.type === "text/plain" || file.name.toLowerCase().endsWith(".txt")) {
+      extractedText = buffer.toString("utf-8");
+    } else if (file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf")) {
+      extractedText = await parsePDF(buffer);
+    } else {
+      return NextResponse.json({ error: "Unsupported file format. Please upload PDF or TXT." }, { status: 400 });
+    }
 
     return NextResponse.json({ text: extractedText });
   } catch (error: any) {
